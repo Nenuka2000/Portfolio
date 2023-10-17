@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img style="border:5px groove rgb(255, 225, 0);" src="/images/12.png" width="250" height="135" alt="Nenuka" />
+
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UX/UI Designer</p>
+            <h1>I'm <span>Nenuka</span><br> Rangala <br>From Ja-ela</h1>
+            
+        </div>
+    </div>
+</div>
+<!--About-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/15.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>  My name is Nenuka Rangala. I'm from in Ja-ela, Western province, Sri Lanaka.I am currently studying at General Sir Jhon Kotelawala Defence University as a 2nd year undergraduate. I specialize in Information Technology. I hope to become Software Enginner one day. I'm really passionate about myself, and I'm always looking for new ways to learn and improve my skills.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>    <!-----categories 3 -->
+                    <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>   <!----------3 different list--------->
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - current</span><br>KDU Southern Campus </li>
+                        <li><span>2019 - 2021</span><br>successfully complete IT course in Esoft</li>   <!----------3 different list--------->
+                        <li><span>2019 - 2019</span><br>successfully complete BCI English Course </li>
+                        <li><span>2015 - 2019</span><br>Presidents cadet in NCC </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br>Did my Olevel</li>
+                        <li><span>2019/2020</span><br>Did my Alevel</li>   <!----------3 different list--------->
+                        <li><span>2019</span><br>Complet bci English Course</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--services-->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Front end developer</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>figma</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Android Studio</p>
+                <a href="#">Learn more</a>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+<!--portfolio--->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/15.webp" ><br>
+                <div class="layer">
+                    <h3>Online bookshop management system</h3>
+                    <p>E-commerce Website</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/16.png" ><br>
+                <div class="layer">
+                    <h3>Gym management system</h3>
+                    <p>C# .Net frame work</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/17.jpg" ><br>
+                <div class="layer">
+                    <h3>How to solve Family problems Cartoon</h3>
+                    <p>Created using Canva</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--contact-->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>nenuka.rangala@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>0716048320</p>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter-square"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/D-BIT-0022-NV Rangala.pdf" download class="btn btn2" style="color: black;">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="'submit-to-google-sheet'">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2" style="color: black;">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Created by <i class="fa-solid fa-heart"></i> Nenuka</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+    for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
+    }
+    for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<script>
+   var sidemenu = document.getElementById("sidemenu");
+   function openmenu(){
+    sidemenu.style.right = "0";
+   }
+   function closemenu(){
+    sidemenu.style.right = "-200px";
+   }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzv1UD1WKwZGnwr5WrctdRCZhGHyfN4MstNlMYJFS0J9lJwaJSLJ6zQz77q98slfzRGFg/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </script>
+
+
+</body> 
+</html>
+
